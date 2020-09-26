@@ -1,5 +1,5 @@
 # myExample
-test_remote
+test_local
 
 [![Build Status](https://travis-ci.com/SunnyXu/myExample.jl.svg?branch=master)](https://travis-ci.com/SunnyXu/myExample.jl)
 [![Build Status](https://ci.appveyor.com/api/projects/status/github/SunnyXu/myExample.jl?svg=true)](https://ci.appveyor.com/project/SunnyXu/myExample-jl)
