@@ -1,5 +1,7 @@
 using Documenter
 using myExample
+
+makedocs(
     sitename = "myExample",
     format = Documenter.HTML(),
     modules = [myExample]
