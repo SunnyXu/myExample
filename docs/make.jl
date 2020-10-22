@@ -4,7 +4,12 @@ makedocs(
     sitename = "myExample.jl",
     format = Documenter.HTML(),
     modules = [myExample],
-    doctest = true
+    doctest = true # this could be set to false
+)
+
+
+deploydocs(
+    repo = "github.com/SunnyXu/myExample.jl.git",
 )
 
 # Documenter can also automatically deploy documentation to gh-pages.
