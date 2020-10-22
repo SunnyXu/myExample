@@ -1,11 +1,12 @@
 module myExample
 
-export my_f #, another function to export
-# using *** is here, even it get used in the extra_file.jl
+# export functions you want to call without qualifications
+export add_exported
+export my_f
 
-greet() = print("Hello World!")
+#using DataFrames # or any other module
 
+# Include functions
 include("extra_file.jl")
-
 
 end # module
