@@ -1,10 +1,10 @@
-using Documenter
-using myExample
+using Documenter, myExample
 
 makedocs(
-    sitename = "myExample",
+    sitename = "myExample.jl",
     format = Documenter.HTML(),
-    modules = [myExample]
+    modules = [myExample],
+    doctest = true
 )
 
 # Documenter can also automatically deploy documentation to gh-pages.
