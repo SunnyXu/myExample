@@ -1,8 +1,6 @@
 # Documentation: http://docs.travis-ci.com/user/languages/julia/
 language: julia
 os:
-  - linux
-  - osx
   - windows
 julia:
   - 1.0
@@ -16,3 +14,14 @@ jobs:
   allow_failures:
     - julia: nightly
   fast_finish: true
+
+jobs:
+  include:
+    - stage: "Documentation"
+      julia: 1.5
+      os: windows
+      script:
+        - julia --project=docs/ -e 'using Pkg; Pkg.develop(PackageSpec(path=pwd()));
+                                               Pkg.instantiate()'
+        - julia --project=docs/ docs/make.jl
+      after_success: skip
