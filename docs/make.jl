@@ -1,9 +1,13 @@
 using Documenter, myExample
 
+isCI = get(ENV, "CI", nothing) == "true"
 makedocs(
     sitename = "myExample.jl",
     format = Documenter.HTML(),
     modules = [myExample],
+    pages = [
+    "Home" => "index.md"
+    ],
     doctest = true # this could be set to false
 )
 
