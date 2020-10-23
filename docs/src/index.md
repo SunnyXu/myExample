@@ -14,3 +14,7 @@ end
 ```@autodocs
 Modules = [myExample]
 ```
+
+```@docs
+my_f(x,y)
+```
