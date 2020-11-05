@@ -3,7 +3,7 @@ language: julia
 os:
   - windows
 julia:
-  - 1.0
+  - 1.5
   - nightly
 notifications:
   email: false
@@ -24,7 +24,7 @@ jobs:
 jobs:
   include:
     - stage: "Documentation"
-      julia: 1.0
+      julia: 1.5
       os: windows
       script:
         - julia --project=docs/ -e 'using Pkg; Pkg.develop(PackageSpec(path=pwd()));
