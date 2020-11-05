@@ -1,22 +1,11 @@
-using Documenter, myExample
-
-isCI = get(ENV, "CI", nothing) == "true"
+using Documenter
+using myExample
 
 makedocs(
-    #source = "src",
-    #build = "build",
-    sitename = "myExample.jl",
+    sitename = "myExample",
     format = Documenter.HTML(),
     modules = [myExample],
-    pages = [
-    "Home" => "index.md"
-    ],
-    doctest = true # this could be set to false
-)
-
-
-deploydocs(
-    repo = "github.com/SunnyXu/myExample.git",
+    doctest = true
 )
 
 # Documenter can also automatically deploy documentation to gh-pages.
@@ -25,3 +14,7 @@ deploydocs(
 #=deploydocs(
     repo = "<repository url>"
 )=#
+
+deploydocs(
+    repo = "github.com/SunnyXu/myExample.git",
+)
