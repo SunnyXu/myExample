@@ -16,7 +16,7 @@ makedocs(
 )=#
 
 deploydocs(
-    deps   = Deps.pip("mkdocs", "python-markdown-math"),
+    #deps   = Deps.pip("mkdocs", "python-markdown-math"),
     repo = "github.com/SunnyXu/myExample.git",
     target = "build",
     branch = "gh-pages",
