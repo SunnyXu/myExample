@@ -6,6 +6,9 @@ makedocs(
     format = Documenter.HTML(),
     modules = [myExample],
     doctest = true
+    pages = [
+    "Home" => "index.md"
+    ],
 )
 
 # Documenter can also automatically deploy documentation to gh-pages.
