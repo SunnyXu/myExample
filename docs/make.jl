@@ -5,10 +5,8 @@ makedocs(
     sitename = "myExample",
     format = Documenter.HTML(),
     modules = [myExample],
-    doctest = true
-    pages = [
-    "Home" => "index.md"
-    ],
+    doctest = true,
+    pages = ["Home" => "index.md"],
 )
 
 # Documenter can also automatically deploy documentation to gh-pages.
@@ -21,7 +19,7 @@ makedocs(
 deploydocs(
     #deps   = Deps.pip("mkdocs", "python-markdown-math"),
     repo = "github.com/SunnyXu/myExample.git",
-    #target = "build",
-    #branch = "gh-pages",
-    #versions = ["stable" => "v^", "v#.#" ],
+    target = "build",
+    branch = "gh-pages",
+    versions = ["stable" => "v^", "v#.#" ],
 )
