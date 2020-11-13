@@ -1,8 +1,7 @@
-# myExample.jl
+# myExample.jl Documentation
 
 using myExample
 
-Documentation for myExample.jl
 
 ```@meta
 CurrentModule = myExample
@@ -13,6 +12,10 @@ end
 
 ```@autodocs
 Modules = [myExample]
+```
+
+```@docs
+my_f(x, y)
 ```
 
 #Documentation Title
