@@ -6,3 +6,4 @@ test_local
 [![Codecov](https://codecov.io/gh/SunnyXu/myExample.jl/branch/master/graph/badge.svg)](https://codecov.io/gh/SunnyXu/myExample.jl)
 [![Coveralls](https://coveralls.io/repos/github/SunnyXu/myExample.jl/badge.svg?branch=master)](https://coveralls.io/github/SunnyXu/myExample.jl?branch=master)
 [![](https://img.shields.io/badge/docs-stable-blue.svg)](https://SunnyXu.github.io/myExample.jl/stable)
+[![](https://img.shields.io/badge/docs-dev-blue.svg)](https://SunnyXu.github.io/myExample.jl/dev)
