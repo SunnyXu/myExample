@@ -1,6 +1,8 @@
 using Documenter
 using myExample
 
+isCI = get(ENV, "CI", nothing) == "true"
+
 makedocs(
     sitename = "myExample",
     format = Documenter.HTML(),
