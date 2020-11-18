@@ -1,4 +1,4 @@
-# myExample.jl
+# myExample
 
 ```@meta
 CurrentModule = myExample
